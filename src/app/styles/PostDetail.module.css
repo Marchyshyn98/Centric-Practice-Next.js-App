@@ -1,0 +1,9 @@
+.commentBox {
+    background-color: rgba(98, 122, 153, .3);
+}
+
+.commentEmail {
+    font-weight: 700;
+    text-decoration: underline;
+    display: inline-block;
+}

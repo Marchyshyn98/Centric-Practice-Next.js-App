@@ -1,0 +1,21 @@
+.statsSection {
+    padding: 100px 0;
+    color: var(--grey);
+}
+
+.statsSection .container {
+    width: 1120px;
+    margin: auto;
+}
+
+.statsSection .colLeft{max-width: 528px;}
+
+.statsSection .btnTab {
+    font-size: 16px;
+}
+
+@media(max-width: 992px) {
+    .statsSection .statsContent {flex-direction: column;}
+    .statsSection .colLeft, .statsSection .colRight {width: 100%; max-width: 100%;}
+}
+

@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000;
+  --foreground: #fff;
+  --grey: #B7BBBC;
+  --blue: #1F7EF6;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--open-sans);
+  font-size: 14px;
+}
+
+.container {
+  width: 98%;
+  margin: auto;
+}
+
+body:has(.theme-selector.light-mode) {background-color: #fff;}
+.container:has(.theme-selector.light-mode) {width: 92%;}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+h5 {
+  font-weight: 18px;
+  font-weight: 600;
+
+}
+
+.general-title {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.general-text {
+  color: #556171;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.intro-text {
+  font-size: 18px;
+}
+
+.centric-card {
+  width: calc(33.33% - 10px);
+  height: 270px;
+}
+
+.centric-card a {
+  background-color: rgba(98, 122, 153, 0.30);
+}
+
+.centric-card a:hover {
+  background-color: rgba(98, 122, 153, 0.60);
+}
+
+.centric-card-learnmore span {
+  font-size: 16px;
+}
+
+.centric-card:hover .centric-card-learnmore {
+  display: block;
+}
+
+.text-white {
+  color: var(--foreground);
+}
+
+.text-grey {
+  color: var(--grey);
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.border-blue {
+  border-bottom: 2px solid var(--blue);
+}
+
+.border-grey {
+  border-bottom: 2px solid var(--grey);
+}
+
+@media(max-width: 992px) {
+  .container {
+    max-width: 98%;
+  }
+
+  .centric-card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media(max-width: 767px) {
+  .centric-card {
+    width: 100%;
+    height: 220px;
+  }
+}

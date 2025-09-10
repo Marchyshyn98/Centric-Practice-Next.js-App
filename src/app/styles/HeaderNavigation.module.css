@@ -1,0 +1,12 @@
+.headerNav {
+    background: #181d20;
+    padding: 25px 30px;
+}
+
+.navLink {
+    font-size: 13px;
+}
+
+.headerNav nav a {
+    margin: 0 10px;
+}

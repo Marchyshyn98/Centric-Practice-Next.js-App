@@ -1,0 +1,14 @@
+.statsItem {
+    border-top: 2px solid #151F2C;
+}
+
+.statsAmount {
+    color: var(--blue);
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.statsTitle {
+    font-size: 22px;
+    line-height: 34px;
+}
