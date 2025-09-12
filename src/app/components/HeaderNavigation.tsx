@@ -1,18 +1,17 @@
 import Image from "next/image"
 import logo from "../../../public/Header_Centric_Software_Logo_White.svg"
-import styles from "../styles/HeaderNavigation.module.css"
 import { ButtonLink } from "./ButtonLink"
 import Link from "next/link"
 
 export function HeaderNavigation() {
-    return <div className={styles.headerNav + ' flex justify-between'}>
+    return <div className='flex justify-between bg-[#181d20] px-8 py-6'>
         <Link href="/">
             <Image src={logo} alt="logo" />
         </Link>
         <nav>
-            <Link className={styles.navLink} href="/centric-planning">Centric Planning</Link>
-            <Link className={styles.navLink} href="/posts">Posts</Link>
-            <Link className={styles.navLink} href="/blog">Blog</Link>
+            <Link className="text-[13px] mx-[10px] my-0" href="/centric-planning">Centric Planning</Link>
+            <Link className="text-[13px] mx-[10px] my-0" href="/posts">Posts</Link>
+            <Link className="text-[13px] mx-[10px] my-0" href="/blog">Blog</Link>
         </nav>
         <ButtonLink link="https://www.centricsoftware.com/request-a-demo/">Request a demo</ButtonLink> 
     </div>

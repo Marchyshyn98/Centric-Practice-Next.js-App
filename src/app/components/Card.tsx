@@ -10,13 +10,13 @@ interface Props {
 
 export function Card({card}: Props) {
     return (
-        <div className="centric-card flex">
-            <Link href={card.link} target="_blank" className="p-[26px] block transition duration-300 ease-in-out">
+        <div className="group flex h-[300px] md:h-[270px] md:w-[calc(50%-10px)] lg:w-[calc(33.33%-10px)]">
+            <Link href={card.link} target="_blank" className="bg-(--bg-card) hover:bg-(--bg-card-hover) p-[26px] block transition duration-300 ease-in-out">
                 <Image src={homeIcon} alt="home-icon" />
                 <h3>{card.title}</h3>
-                <p className="centric-card-text mb-[15px]">{card.description}</p>
-                <div className="centric-card-learnmore hidden transition duration-300 ease-in-out">
-                    <span className="uppercase font-[600]">learn more</span>
+                <p className="text-sm mb-[15px]">{card.description}</p>
+                <div className="hidden group-hover:block transition duration-300 ease-in-out">
+                    <span className="text-base uppercase font-[600]">learn more</span>
                     <Image src={arrowNext} alt="arrow-next" className="inline-block mb-[4px] ml-[10px]" />
                 </div>
             </Link>

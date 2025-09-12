@@ -1,5 +1,4 @@
 import Link from "next/link";
-import styles from "../styles/ButtonLink.module.css"
 
 type ButtonLink = {
     link: string,
@@ -9,7 +8,7 @@ type ButtonLink = {
 export function ButtonLink({link, children}: ButtonLink) {
     return (
     <div>
-        <Link href={link} className={styles.btn + ' ' + styles.btnBlue}>{children}</Link>
+        <Link href={link} className="text-[13px] rounded-4xl bg-[linear-gradient(267.29deg,_#097FE2,_#096BE1_100%)] hover:bg-[linear-gradient(267.29deg,_#097FE2,_#085CDB_100%)] px-4 py-2">{children}</Link>
     </div>
     )
 }
