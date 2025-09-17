@@ -22,7 +22,7 @@ export default async function BlogDetail({ params }: BlogPageProps) {
 
     const blogPost = await fetchBlogPost(slug);
 
-    console.log(blogPost)
+    // console.log(blogPost)
 
     const { title, date, content, author, video } = blogPost.fields;
 

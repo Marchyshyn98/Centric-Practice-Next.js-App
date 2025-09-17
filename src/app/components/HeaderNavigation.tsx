@@ -12,6 +12,7 @@ export function HeaderNavigation() {
             <Link className="text-[13px] mx-[10px] my-0" href="/centric-planning">Centric Planning</Link>
             <Link className="text-[13px] mx-[10px] my-0" href="/posts">Posts</Link>
             <Link className="text-[13px] mx-[10px] my-0" href="/blog">Blog</Link>
+            <Link className="text-[13px] mx-[10px] my-0" href="/articles">Knowledge base</Link>
         </nav>
         <ButtonLink link="https://www.centricsoftware.com/request-a-demo/">Request a demo</ButtonLink> 
     </div>
