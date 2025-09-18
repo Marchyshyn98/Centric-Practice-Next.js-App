@@ -46,7 +46,7 @@ export default async function Article({ params }: ArticlePageProps) {
                     height="365"
                 />
                 <div className="space-y-4 md:space-y-6">
-                    {documentToReactComponents(details.json)}
+                    <div className="prose prose-invert">{documentToReactComponents(details.json)}</div>
                 </div>
             </div>
         </div>
